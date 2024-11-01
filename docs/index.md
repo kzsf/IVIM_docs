@@ -2,7 +2,13 @@
 Preprocessing diffusion MRI data and fitting IVIM models
 
 ## How to use locally:
-1. Clone the repository and cd into it.
+1. Clone the repository with `git clone` and `cd` into it. You should see a `run.py` file there.
+```
+git clone https://github.com/PostonLab/IVIM_fit.git
+```
+```
+cd ivim_fit
+```
 2. Install poetry using `pip install poetry`
 ```
 pip install poetry
@@ -14,19 +20,15 @@ poetry install
 ```
 poetry shell
 ```
-4. Navigate to ivim_fit directory with `cd ivim_fit`, where you will see the `run.py` file.
-```
-cd ivim_fit
-```
-5. First run the workflow dry-run with python `./run.py <path to bids data> <path to output> participant -np`.
+4. First run the workflow dry-run with python `./run.py <path to bids data> <path to output> participant -np`.
 ```
 ./run.py <insert path to your bids data> <insert path to your output> participant -np
 ```
-6. If the dry run is successful, we can run the workflow with `python ./run.py <path to bids data> <path to output> participant -c all --use-singularity`. Where `-c` is for number of cores you want to use. `all` will use everything available.
+5. If the dry run is successful, we can run the workflow with `python ./run.py <path to bids data> <path to output> participant -c all --use-singularity`. Where `-c` is for number of cores you want to use. `all` will use everything available.
 ```
 python ./run.py <path to bids data> <path to output> participant -c all --use-singularity
 ```
-7. When running for the first time, it will install all the singularity containers.
+6. When running for the first time, it will install all the singularity containers.
 
 ## How to run in Sherlock cluster at Stanford:
 1. Activate an interractive shell using `salloc`
