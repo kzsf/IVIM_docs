@@ -47,7 +47,7 @@ python3.9 -m venv py3
 ```
 source py3/bin/activate
 ```
-6. Install dependencies with `poetry install`.(If poetry is not installed, install it using `python3 -m pip install poetry==1.8.5`. If needed install six package using `python3 -m pip install six`, and load dcm2niix with `module spider dcm2niix/1.0.20211006`)
+6. Install dependencies with `poetry install`.(If poetry is not installed, install it using `python3 -m pip install poetry==1.8.5`. If needed install six package using `python3 -m pip install six`)
 ```
 poetry install
 ```
