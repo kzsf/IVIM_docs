@@ -39,20 +39,20 @@ salloc
 ```
 ml python/3.9.0
 ```
-3. Create a python environment `python3.9 -m venv <name>`
+3. Create a python environment `python3.9 -m venv py3`
 ```
-python3.9 -m venv <name>
+python3.9 -m venv py3
 ```
 4. Activate the environment `source py3/bin/activate`
 ```
 source py3/bin/activate
 ```
-6. Install dependencies with `poetry install`.(If poetry is not installed, install it using `python3 -m pip install poetry`. If needed install six package using `python3 -m pip install six`)
+6. Install dependencies with `poetry install`.(If poetry is not installed, install it using `python3 -m pip install poetry==1.8.5`. If needed install six package using `python3 -m pip install six`, and load dcm2niix with `module spider dcm2niix/1.0.20211006`)
 ```
 poetry install
 ```
 ``` title="If poetry not already installed:"
-python3 -m pip install poetry
+python3 -m pip install poetry==1.8.5
 ```
 7. Deactivate the existing python environment using `deactivate`. Then use `poetry shell` to activate the new ivim virtual environment.
 ```
